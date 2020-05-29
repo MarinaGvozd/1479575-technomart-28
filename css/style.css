@@ -1,0 +1,274 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+:root {
+    --Basic-green: #63A63E; 
+    --Basic-red: #EE3643;
+    --Basic-greylight: #C5C5C5;
+    --Basic-grey: #3D546F;
+    --Basic-white: #FFFFFF;
+    --Dark-blue: #32425C;
+    --Basic-background: #F1F5F7;
+    --Special-yellow: #FFBF47;
+    --Special-blue: #3BBCE3;
+    --Special-lilac: #DC91D8;
+    --Special-greenlight: #8ED78F;
+    --Special-yellowlight: #FFD180;
+    --Success: #5FBB2D;
+    --Warning: #FFBF47;
+    --Error: #BA2732;
+    --Black: #000000;
+    --Light-grey: #EAEAEA;
+    --Extra-light-grey: #A9A9A9;
+    --yellow: #FFDA96;
+    --Blue: #293449;
+    --Dark: #212A3A;
+    --Special-dark: #161D29;
+    --Very-dark: #1D2739;
+}
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cuprum', sans-serif, 'PT Sans';
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--Black);
+    background-color: var(--Basic-white);
+}  
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.main-navigation {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--Basic-white);
+    background-color: var(--Dark-blue);
+}
+.main-navigation li:hover {
+    background-color: var(--Blue);
+}
+.main-navigation li:focus {
+    background-color: var(--Very-dark);
+}
+.main-header {
+    background-color: var(--Basic-background);
+}
+.main-header ul,
+.main-footer ul,
+.footer-social ul {
+    list-style: none;
+}
+.main-header a,
+.logo-footer a {
+    color: var(--Basic-white);
+}
+.main-header-logo,
+.main-footer-logo {
+    background-color: var(--Basic-red);
+}
+.main-header-logo:active {
+    background-color: var(--Error);
+}
+.marker:active,
+.shopping:active {
+    background-color: var(--Special-dark);
+}
+.order a:hover {
+    background-color: var(--Success);
+}
+.search a:focus {
+    background-color: var(--Basic-white);
+}
+.wrapper-navigation {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--Basic-white);
+    background-color: var(--Dark-blue);
+}
+.user-navigation .order {
+    background-color: var(--Basic-green);
+}
+.slogan {
+    color: var(--Basic-red);
+    font-size: 13px;
+    line-height: 23px;
+    text-align: left;
+}
+.tel a{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--Basic-red);
+}
+.tel {
+    border: 3px solid var(--Basic-white);
+    padding: 7px 45px 8px 39px;
+    text-align: center;
+}
+.address {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--Dark-blue);
+}
+.user-block .enter,
+.user-block .registration {
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--Basic-white);
+    font-size: 21px;
+    line-height: 21px;
+    padding: 12px 24px 12px 24px;
+}
+.user-block a{
+    color: var(--Black);
+}
+.user-block .enter a:hover,
+.user-block .registration a:hover {
+    color: var(--Basic-red);
+}
+.user-block .enter a:focus,
+.user-block .registration a:focus {
+    color: var(--Basic-greylight);
+}
+.info-services,
+.contacts {
+    text-align: left ;
+}
+.info-services h2,
+.contacts h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+}
+.services p,
+.contacts p  {
+    font-size: 13px;
+    line-height: 24px;
+}
+.list-services li {
+    font-size: 18px;
+    line-height: 24px;
+}
+.contacts .button,
+.info-services .button {
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+    color: var(--Basic-white);
+    background-color: var(--Basic-red);
+    font-size: 14px;
+    line-height: 18px;
+    padding: 11px 26px 9px;
+}
+.page-footer {
+    background-color: var(--Dark-blue);
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--Basic-white);
+}
+.list-nav {
+    font-size: 18px;
+    line-height: 24px;
+}
+.list-nav a:hover{
+    border-bottom: 1px solid;
+}
+.list-nav a:focus{
+    opacity: 0.6;
+}
+.main-nav-footer a{
+    color: var(--Basic-white);
+}
+.services-footer a{
+    color: var(--yellow);
+}
+.section-footer {
+    background-color: var(--Blue);
+}
+.footer-copyright {
+   font-size: 16px;
+   line-height: 18px;
+}
+.feedback,
+.footer-copyright, {
+    color: inherit;
+    font-size: 16px;
+    line-height: 18px;
+}
+.feedback a,
+.footer-copyright a {
+    color: var(--yellow);
+}
+.feedback a:focus,
+.footer-copyright a:focus {
+    color: var(--Basic-red);
+}
+.my-login {
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--Black);
+    background-color: var(--Basic-white);
+}
+.my-login a {
+    color: var(--Black);
+    padding: 12px 21px;
+}
+.personal a{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--Dark);
+}
+.login-panel a:focus {
+    color: var(--Basic-greylight);
+    }
+.personal a:hover {
+    color: var(--Basic-red);
+
+}
+.catalog-item {
+    font-family: PT Sans;
+    border: 1px solid #EAEAEA;
+    vertical-align: middle;
+    text-align: center;
+}
+.canalog-item a {
+
+}
+
+.catalog-item h3 {
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--Black);
+    font-weight: bold;
+}
+.catalog-item .old-price {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--Extra-light-grey);
+    text-decoration: line-through;
+  }
+  .catalog-item .button {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+    background-color: var(--Basic-red);
+    color: var(--Basic-white);
+    padding: 10px 32px;
+    border: none;
+  }
