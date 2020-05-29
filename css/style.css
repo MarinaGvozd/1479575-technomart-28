@@ -37,7 +37,7 @@ body {
     min-width: 960px;
     margin: 0;
     padding: 0;
-    font-family: 'Cuprum', sans-serif, 'PT Sans';
+    font-family: 'Cuprum', 'PT Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -85,6 +85,11 @@ img {
 .marker:active,
 .shopping:active {
     background-color: var(--Special-dark);
+}
+.order {
+  text-align: center;
+
+   width: 150px;
 }
 .order a:hover {
     background-color: var(--Success);
@@ -185,7 +190,7 @@ img {
     line-height: 24px;
 }
 .list-nav a:hover{
-    border-bottom: 1px solid;
+    text-decoration: underline;
 }
 .list-nav a:focus{
     opacity: 0.6;
