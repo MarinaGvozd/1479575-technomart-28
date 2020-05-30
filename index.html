@@ -185,42 +185,40 @@
                 </div>
         </section>
         <section>
-                <div>
-                    <div>
-                        <h2>Сервисы</h2>
-                        <p>Хороший интернет-магазин отличается от плохого не только ценами!
-                            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
-                        <label for="">Доставка
-                            <input type="radio" name="radio">
-                              <span>
-                                  <h2>ДОСТАВКА</h2>
-                                  <p>Мы с удовольствием доставим ваш товар прямо <br>
-                                    к вашему подъезду совершенно бесплатно!<br>
-                                    Ведь мы неплохо заработаем, <br>
-                                    поднимая его на ваш этаж!</p>
-                                    <img src="" alt="Доставка по адресу.">
-                              </span>
-                        </label>
-                        <label for="">Гарантия
-                            <input type="radio" name="radio">
-                              <span>
-                                  <h2>ГАРАНТИЯ</h2>
-                                  <p>Если купленный у нас товар поломается или заискрит, на также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.  Дом уж восстановите как-нибудь сами.</p>
-                                  <img src="" alt="Гарантийное обслуживаниею">
-                              </span>
-                        </label>
-                        <label for="">Кредит
-                        <input type="radio" name="radio">
-                              <span>
-                                  <h2>КРЕДИТ</h2>
-                                  <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-                                  <a href="#">Отправить ссылку</a>
-                                  <img src="" alt="Возможность оформления в кредитю">
-                              </span>
-                        </label>
-                    </div>
-                    <div>
-                    </div>
+            <div class="tabset">
+                <input type="radio" name="tabset" id="tab3" aria-controls="delivery" checked>
+                <label for="tab3">Доставка</label>
+                <!--  Tab 1  -->
+                  <input type="radio" name="tabset" id="tab1" aria-controls="quality">
+                  <label for="tab1">Гарантия</label>
+                <!--  Tab 2  -->
+                  <input type="radio" name="tabset" id="tab2" aria-controls="credit">
+                  <label for="tab2">Кредит</label>
+                <!--  Tab 3  -->
+                  
+                  
+                  
+                  <div class="tab-panels">
+                    <section class="tab-panel" id="delivery">
+                      <h3>Доставка</h3>
+                      <p>Мы с удовольствием доставим ваш товар прямо 
+                        к вашему подъезду совершенно бесплатно!
+                        Ведь мы неплохо заработаем, 
+                        поднимая его на ваш этаж!</p>
+                      <img src="img/Delivery.svg" alt="Услуга доставки.">
+                    </section>
+                    <section class="tab-panel" id="price">
+                       <h3>Гарантия</h3>
+                       <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.  Дом уж восстановите как-нибудь сами.</p>
+                       <img src="img/quality.svg" alt="Услуга гарантии.">
+                    </section>
+                    <section class="tab-panel" id="credit">
+                       <h3>Кредит</h3>
+                       <p>Залезть в долговую яму стало проще!  Кредитные консультанты придут вам на помощь.</p>
+                        <button class="btn">Отправить заявку</button>
+                       <img src="img/credit.svg" alt="Услуга гарантии.">
+                    </section>
+                  </div>
                 </div>
         </section>
         <div class="wrapper-info-company">
