@@ -134,6 +134,7 @@ list-style: none;
 }
 .main-header-logo {
 display: inline-block;
+vertical-align: middle;
 background-color: var(--Basic-red);
 box-shadow: 0 5px 0 0 #b52933;
 padding: 10px 57px 6px 55px;
@@ -178,6 +179,7 @@ background-color: var(--Basic-white);
 }
 .search .link {
 display: inline-block;
+vertical-align: middle;
 font-size: 18px;
 line-height: 24px;
 color: var(--Basic-white);
@@ -209,6 +211,7 @@ display: flex;
 justify-content: space-between;
 }
 .user-navigation .link {
+  vertical-align: middle;
 display: inline-block;
 font-size: 18px;
 line-height: 24px;
@@ -299,6 +302,7 @@ justify-content: flex-end
 } 
 .enter {
 padding: 12px 27px 12px 19px;
+cursor: pointer;
 }
 .registration {
 margin-left: 10px;
@@ -315,9 +319,12 @@ line-height: 21px;
 .user-block .link {
 color: var(--Black);
 }
-.enter .link:hover,
-.registration .link:hover {
+.enter:hover .link,
+.registration:hover .link {
 color: var(--Basic-red);
+}
+.enter:hover > svg path{
+fill: black;
 }
 .enter .link:focus,
 .registration .link:focus {
@@ -636,7 +643,7 @@ top: 12px;
 right: 17px;
 width: 20px;
 height: 20px;
-background: url(../img/icon-logout\ \(1\).svg) 0% 50%  no-repeat;
+background: url(../img/icon-logout.svg) 0% 50%  no-repeat;
 }
 .my-login .link::before {
 position: absolute;
@@ -645,7 +652,7 @@ top: 12px;
 left: 17px;
 width: 20px;
 height: 20px;
-background: url(../img/Login-user.svg) 0% 50%  no-repeat;
+background: url(../img/login-user.svg) 0% 50%  no-repeat;
 }
 .page-catalog {
 display: grid;
@@ -707,7 +714,6 @@ flex-wrap: wrap;
 padding: 0;
 margin: 0;
 list-style: none;
-padding-top: 22px;
 }
 .pagination-item .link {
 margin: 0;
@@ -815,7 +821,7 @@ background-color: var(--Bg-filter);
 .filters fieldset {
 padding: 0;
 margin: 0;
-margin-bottom: 22px;
+margin-bottom: 27px;
 border: none;
 }
 .range-filter {
@@ -1009,6 +1015,7 @@ line-height: 18px;
 display: flex;
 flex-wrap: wrap;
 margin-bottom: 48px;
+margin-bottom: 23px;
 }
 .main-catalog-list .catalog-item,
 .additional-catalog-list .catalog-item {
@@ -1085,6 +1092,7 @@ transform: rotate(45deg);
 }
 .catalog {
 margin-left: 20px;
+margin-bottom: 58px;
 }
 
 /* Tabs */
@@ -1163,7 +1171,7 @@ background: var(--Basic-white);
 display: block; 
 }
 .content1 {
-background-image: url(../img/Delivery.svg);
+background-image: url(../img/delivery.svg);
 background-repeat: no-repeat;
 background-position: 99% 100%;
 } 
@@ -1181,11 +1189,11 @@ background-position: 100% 125%;
 /* page-catalog about-drells */
 
 .about-drells {
-color: var(--Basic-background);
+background: var(--Basic-background);
 }
 .about-drells .container {
 text-align: left;
-padding: 71px 0 69px 0;
+padding: 65px 0 67px 0;
 }
 .about-drells .title {
 padding: 0;
@@ -1263,6 +1271,7 @@ padding: 11px 41px 13px 40px;
 
 .main-footer-logo {
 display: inline-block;
+vertical-align: middle;
 background-color: var(--Basic-red);
 box-shadow: 0 5px 0 0 #b52933;
 padding: 21px 42px 13px 41px;

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<div>
+<body>
     <header class="main-header">
         <div>
             <div class="bg-wrapper">
@@ -42,7 +42,7 @@
                                         <a class="link" href="#">Закладки: 0</a>
                                     </li>
                                     <li class="shopping">
-                                        <img class="vision" src="img/icon-cart (1).svg" width="15" height="15"
+                                        <img class="vision" src="img/icon-shopping.svg" width="15" height="15"
                                             alt="Корзина покупателя.">
                                         <a class="link" href="#">Корзина: 0</a>
                                     </li>
@@ -73,7 +73,11 @@
                     </div>
                     <div class="user-block information-item">
                         <span class="enter">
-                            <img src="img/icon-login (1).svg" width="19" height="17" alt="Кнопка входа.">
+                            
+<svg width="20" height="18" viewBox="0 0 20 18" fill="red" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14.1667 9L5.71429 0.5V6.5H0V11.5H5.71429V17.5L14.1667 9Z" fill="#C5C5C5"/>
+    <path d="M16.1771 15.51H11.3895V17.5H16.1771C18.2514 17.5 19.0381 15.69 19.0619 14.474V3.528C19.0381 2.311 18.2514 0.5 16.1771 0.5H11.3895V2.49H16.1771C16.9762 2.49 17.1219 3.171 17.1391 3.547V14.451C17.1229 14.827 16.9762 15.51 16.1771 15.51Z" fill="#C5C5C5"/>
+    </svg>
                             <a class="link" href="#">Войти</a>
                         </span>
                         <span class="registration">
@@ -127,7 +131,7 @@
                         <h3 class="title">Перфораторы</h3>
                         <span class="span">Настоящие мужские игрушки</span>
                     </div>
-                    <button class="button" href="#">Открыть каталог</button>
+                    <button class="button">Открыть каталог</button>
                     <!-- <img src="img/main-photo.jpg" width="620" height="266" alt="Каталог перфораторов."> -->
                 </li>
                 <!-- <li class="list-slides second-slide">
@@ -143,7 +147,7 @@
         <div class="discounts">
             <h3 class="title">Скидки 50%</h3>
             <a class="link" href="#">На 350 товаров</a>
-            <div class="vision"><img src="img/icon-4 (3).svg" width="59" height="72" alt="Скидки а 350 товаров.">
+            <div class="vision"><img src="img/icon-(1).svg" width="59" height="72" alt="Скидки а 350 товаров.">
             </div>
         </div>
         <div class="delivery">
@@ -157,12 +161,12 @@
     <div class="container">
         <div class="wrapper-popular-products">
             <h2 class="title">Популярные товары:</h2>
-            <button class="button" href="catallog.html">Все популярные товары</button>
+            <button class="button">Все популярные товары</button>
         </div>
         <div class="additional-catalog-list">
             <div class="catalog-item">
                 <div class="visual">
-                    <img class="img-drill" src="img/Object (11).jpg" height="164" width="184"
+                    <img class="img-drill" src="img/object(11).jpg" height="164" width="184"
                         alt="Перфоратор BOSCH BFG 9000">
                 </div>
                 <h3 class="title">Перфоратор BOSCH BFG 6000</h3>
@@ -171,21 +175,21 @@
             </div>
 
             <div class="catalog-item">
-                <div class="visual"><img class="img-drill" src="img/object - 2.jpg" height="112" width="127"
+                <div class="visual"><img class="img-drill" src="img/object-2.jpg" height="112" width="127"
                         alt="Перфоратор BOSCH BFG 6000"></div>
                 <h3 class="title">Перфоратор BOSCH BFG 3000</h3>
                 <span class="old-price">22500 Р.</span>
                 <button class="button" type="button">15500 Р.</button>
             </div>
             <div class="catalog-item">
-                <div class="visual"><img class="img-drill" src="img/object - 1.jpg" height="128" width="144"
+                <div class="visual"><img class="img-drill" src="img/object-1.jpg" height="128" width="144"
                         alt="Перфоратор BOSCH BFG 6000"></div>
                 <h3 class="title">Перфоратор BOSCH BFG 6000</h3>
                 <span class="old-price">30500 Р.</span>
                 <button class="button" type="button">25500 Р.</button>
             </div>
             <div class="catalog-item">
-                <div class="visual"><img class="img-drill" src="img/object - 2.jpg" height="112" width="127"
+                <div class="visual"><img class="img-drill" src="img/object-2.jpg" height="112" width="127"
                         alt="Перфоратор BOSCH BFG 3000"></div>
                 <h3 class="title">Перфоратор BOSCH BFG 2000</h3>
 
@@ -198,7 +202,7 @@
     <div class="container">
         <div class="wrapper-popular-manufacturers">
             <h2 class="title">Популярные производители:</h2>
-            <button class="button" href="catallog.html">Все производители:</a>
+            <button class="button">Все производители:</button>
         </div>
         <div class="manufacturers">
             <ul class="list-manufacturers">
@@ -363,11 +367,11 @@
             <input id="e-mail-user" type="email" name="e-mail" placeholder="email@example.com" required>
         </p>
         <h3>Текст письма</h3>
-        <Textarea rows="5" cols="60" placeholder="В свободной форме"></Textarea><br>
+        <label for="comment"></label>
+        <textarea id="comment"rows="5" cols="60" placeholder="В свободной форме"></textarea><br>
         <button type="submit">Отправить</button>
     </form>
 </section>
-</div>
 </body>
 
 </html>
