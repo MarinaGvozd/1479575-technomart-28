@@ -211,7 +211,7 @@ display: flex;
 justify-content: space-between;
 }
 .user-navigation .link {
-  vertical-align: middle;
+vertical-align: middle;
 display: inline-block;
 font-size: 18px;
 line-height: 24px;
@@ -222,8 +222,8 @@ padding: 9px 18px 10px 18px;
 }
 .marker .link,
 .shopping .link {
-  padding: 9px 15px 10px 15px;
-  }
+padding: 9px 15px 10px 15px;
+}
 .user-navigation .order {
 background-color: var(--Basic-green);
 text-align: center;
@@ -242,15 +242,15 @@ opacity: 1;
 background-color: var(--Success);
 }
 .order :focus {
-  opacity: 0.3;
-  }
+opacity: 0.3;
+}
 .marker {
 /* margin-left: 22px; */
 text-align: center;
 
 }
 .shopping {
-  text-align: center;
+text-align: center;
 /* margin-left: 26px; */
 
 }
@@ -923,90 +923,90 @@ color: #B5B5B5;;
 color: #B5B5B5;;
 }
 .filter-input-checkbox + label::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -35px;
-    width: 19px;
-    height: 19px;
-    border-radius: 10%;
-    border: 2px solid #C5C5C5;
-  }
-  
-  .filter-input-checkbox:checked + label:hover:before{
-    border: 2px solid #B5B5B5;;
-  }
+content: "";
+position: absolute;
+top: -2px;
+left: -35px;
+width: 19px;
+height: 19px;
+border-radius: 10%;
+border: 2px solid #C5C5C5;
+}
 
-  .filter-input-radio:checked + label:hover:before{
-    border: 2px solid #B5B5B5;;
-  }
-  .filter-input-checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -32px;
-  width: 39px;
-  height: 29px;
-  background: url(../img/check.svg) no-repeat;
-  background-position: 1px 1px;
-  color: #C5C5C5;
+.filter-input-checkbox:checked + label:hover:before{
+border: 2px solid #B5B5B5;;
+}
+
+.filter-input-radio:checked + label:hover:before{
+border: 2px solid #B5B5B5;;
+}
+.filter-input-checkbox:checked + label::after {
+content: "";
+position: absolute;
+top: -2px;
+left: -32px;
+width: 39px;
+height: 29px;
+background: url(../img/check.svg) no-repeat;
+background-position: 1px 1px;
+color: #C5C5C5;
 }
 .filter-input-radio + label::before {
-    content: "";
-    position: absolute;
-    top: -1px;
-    left: -35px;
-    width: 19px;
-    height: 19px;
-    border-radius: 50%;
-    border: 3px solid #C5C5C5;
-  }
-.filter-input-radio:checked + label::after {
-    content: "";
-    position: absolute;
-    top: 7px;
-    left: -27px;
-    width: 9px;
-    height: 9px;
-    background-color: #C5C5C5;
-    border-radius: 50%;
+content: "";
+position: absolute;
+top: -1px;
+left: -35px;
+width: 19px;
+height: 19px;
+border-radius: 50%;
+border: 3px solid #C5C5C5;
 }
-  .filter-option {
-    margin-bottom: 21px;
-    padding-left: 36px;
+.filter-input-radio:checked + label::after {
+content: "";
+position: absolute;
+top: 7px;
+left: -27px;
+width: 9px;
+height: 9px;
+background-color: #C5C5C5;
+border-radius: 50%;
+}
+.filter-option {
+margin-bottom: 21px;
+padding-left: 36px;
 }
 .type .list {
-  margin-top: 23px;
+margin-top: 23px;
 }
 .filter-input-checkbox + label {
 margin-bottom: 20px;
 }
 .filter-option label {
-    position: relative;
-    display: block;
-    cursor: pointer;
-    user-select: none;
-    font-family: PT Sans;
+position: relative;
+display: block;
+cursor: pointer;
+user-select: none;
+font-family: PT Sans;
 font-weight: 400;
 font-size: 15px;
 line-height: 19px;
 text-transform: uppercase;
-  }
-  .filter-input-checkbox:hover + label,
+}
+.filter-input-checkbox:hover + label,
 .filter-input-checkbox:focus + label {
-  color: var(--);
+color: var(--);
 }
 .filter-button.button {
-    display: inline-block;
-    padding: 6px 79px;
-    font: inherit;
-    text-align: center;
-    color: var(--Black);
-    vertical-align: middle;
-    text-transform: uppercase;
-    background-color: var(--Basic-white);
-    border: 1px solid #E5E5E5;
-    font-family: PT Sans;
+display: inline-block;
+padding: 6px 79px;
+font: inherit;
+text-align: center;
+color: var(--Black);
+vertical-align: middle;
+text-transform: uppercase;
+background-color: var(--Basic-white);
+border: 1px solid #E5E5E5;
+font-family: PT Sans;
 
 font-size: 13px;
 line-height: 18px;
@@ -1159,11 +1159,11 @@ color: var(--Dark-blue);
 background: var(--Basic-white); 
 } 
 .tabs label:hover {
-  background-color: var(--Blue);
+background-color: var(--Blue);
 }
 .tabs label:active {
-  background-color: var(--Basic-white);
-  color: var(--Dark-blue);
+background-color: var(--Basic-white);
+color: var(--Dark-blue);
 }
 #tab1:checked ~ .content1, 
 #tab2:checked ~ .content2, 
@@ -1358,7 +1358,7 @@ color: var(--Basic-red);
 } 
 .feedback .link:hover,
 .footer-copyright .link:focus {
-  text-decoration: underline;
+text-decoration: underline;
 } 
 .footer-copyright .text {
 text-align: left;
