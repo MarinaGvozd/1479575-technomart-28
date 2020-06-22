@@ -85,7 +85,7 @@ display: block;
 padding: 20px 31px;
 font-size: 17px;
 line-height: 17px;
-color: #fff;
+color: var(--Basic-white);
 }
 .main-navigation .item-list:hover {
 background-color: var(--Blue);
