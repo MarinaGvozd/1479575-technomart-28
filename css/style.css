@@ -90,9 +90,9 @@ color: var(--Basic-white);
 .main-navigation .item-list:hover {
 background-color: var(--Blue);
 }
-.main-navigation .item-list:focus {
+.main-navigation .item-list .link:focus {
 background-color: var(--Special-dark);
-opacity: 0.2;
+opacity: 0.3;
 }
 .main-header {
 background-color: var(--Basic-background);
@@ -227,15 +227,23 @@ padding: 9px 15px 10px 15px;
 .user-navigation .order {
 background-color: var(--Basic-green);
 text-align: center;
-/* margin-left: 10px;  */
+margin-left: 12px; 
 }
-.marker :focus,
-.shopping :focus {
+.marker .link:focus,
+.shopping .link:focus {
 background-color: var(--Special-dark);
+opacity: 0.3;
 }
-
-.marker .vision:hover,
-.shopping .vision:hover {
+.marker .link:active,
+.shopping .link:active {
+opacity: 1;
+}
+.shopping .link:active .vision,
+.marker .link:active .vision {
+opacity: .3;
+}
+.marker .link:hover,
+.shopping .link:hover {
 opacity: 1;
 }
 .order :hover {
@@ -251,13 +259,16 @@ text-align: center;
 }
 .shopping {
 text-align: center;
-/* margin-left: 26px; */
+margin-left: 24px; 
 
 }
 .shopping .vision,
-/* .marker .vision {
-margin-right: -10px; */
+.marker .vision {
 opacity: 0.3;
+}
+.shopping:hover .vision,
+.marker:hover .vision {
+opacity: 1;
 }
 .slogan {
 font-weight: 400;
@@ -297,24 +308,28 @@ line-height: 24px;
 color: var(--Dark-blue);
 }
 .user-block {
+padding-top: 10px;
 display: flex;
 justify-content: flex-end
 } 
-.enter {
-padding: 12px 27px 12px 19px;
+.enter .link{
+position: relative;
 cursor: pointer;
+padding: 12px 27px 12px 46px;
 }
-.registration {
+.registration .link {
 margin-left: 10px;
 padding: 12px 24px 12px 24px;
 }
-.user-block .enter,
-.user-block .registration {
+
+.user-block .enter .link,
+.user-block .registration .link{
 text-align: center;
 vertical-align: middle;
 background-color: var(--Basic-white);
 font-size: 21px;
 line-height: 21px;
+
 }
 .user-block .link {
 color: var(--Black);
@@ -323,11 +338,29 @@ color: var(--Black);
 .registration:hover .link {
 color: var(--Basic-red);
 }
-.enter:hover > svg path{
-fill: black;
+.registration .link:focus,
+.enter .link:focus {
+color: var(--Basic-greylight);
 }
-.enter .link:focus,
-.registration .link:focus {
+
+.enter .link::before,
+.enter .link:focus::before {
+content: '';
+position: absolute;
+top: 14px;
+bottom: 0;
+left: 19px;
+width: 19px;
+height: 20px;
+background: url(../img/enter.svg) no-repeat;
+}  
+
+.enter .link:hover::before {
+    background: url(../img/login.svg) no-repeat;
+}
+
+
+.enter:focus {
 color: var(--Basic-greylight);
 }
 .info-services .title,
@@ -496,12 +529,13 @@ left: 25px;
 padding: 10px 46px;
 outline: none;
 }
-.rotary-hammers .button:hover {
+.button:hover {
 background-color: #CA2C37;
 }
-.rotary-hammers .button:focus {
+.button:focus {
 background-color: var(--Error);
 }
+
 /* Популярные товары */
 
 .wrapper-popular-products,
@@ -573,6 +607,12 @@ height: 145px;
 list-style-type: none; 
 border: 1px solid #EAEAEA;
 }
+.list-manufacturers .list-item:hover { 
+box-shadow: 0 10px 25px rgba(41,52,73,.5);
+}
+.list-manufacturers .list-item .link:focus { 
+opacity: 0.2;
+}
 .list-manufacturers .list-item .vision{
 display:block; 
 /* margin:25px auto 25px;  */
@@ -636,6 +676,16 @@ display: block;
 position: relative;
 padding: 12px 57px;
 }
+.my-login .link:focus {
+color: var(--Basic-greylight)
+}
+.my-login .link:hover::before {
+background: url(../img/dark-login-user.svg) 0% 50%  no-repeat;
+}
+.my-login .link:hover::after {
+background: url(../img/dark-icon-logout.svg) 0% 50%  no-repeat;
+}
+.my-login .link:focus::after,
 .my-login .link::after {
 position: absolute;
 content: '';
@@ -645,6 +695,7 @@ width: 20px;
 height: 20px;
 background: url(../img/icon-logout.svg) 0% 50%  no-repeat;
 }
+.my-login .link:focus::before,
 .my-login .link::before {
 position: absolute;
 content: '';
@@ -790,6 +841,15 @@ border-bottom: 1px solid var(--Basic-red);
 .sort .list-sort .list-item:active {
 color: var(--Basic-red); 
 border-bottom: none;
+}
+
+.list-item-img.down:hover path,
+.list-item-img.up:hover path {
+fill: var(--Black); 
+}
+.list-item-img.down:active path,
+.list-item-img.up:active path{
+fill: var(--Basic-red); 
 }
 .sort .list-sort .list-item:last-child,
 .sort .list-sort .list-item:nth-last-child(2) {
