@@ -113,7 +113,7 @@
     <section class="products">
         <div class="container">
             <h2 class=".visually-hidden">Наши товары и предложения</h2>
-            <div class="materials">
+            <div class="materials new">
                 <h3 class="title">Материалы</h3>
                 <a class="link" href="#">На 350 товаров</a>
                 <div class="vision"><img src="img/icon-1.svg" width="44" height="65" alt="Строительные материалы.">
@@ -131,24 +131,32 @@
                 </div>
             </div>
             <div class="rotary-hammers">
-                <ul class="slide">
-                    <li class="list-slides first-slide">
+                <ul class="slide-list">
+                    <li class="slider-item first-slide slide-current">
                         <div class="wrapper-slide">
                             <h3 class="title">Перфораторы</h3>
                             <span class="span">Настоящие мужские игрушки</span>
                         </div>
-                        <button class="button">Открыть каталог</button>
+                        <a class="button slide-button" href="catallog.html">Открыть каталог</a>
                         <!-- <img src="img/main-photo.jpg" width="620" height="266" alt="Каталог перфораторов."> -->
                     </li>
-                    <!-- <li class="list-slides second-slide">
+                    <li class="slider-item second-slide">
                         <div class="wrapper-slide">
-                            <h3 class="title">Перфораторы</h3>
-                            <span class="span">Настоящие мужские игрушки</span>
+                            <h3 class="title">Дрели</h3>
+                            <span class="span">Соседям на радость!</span>
                         </div>
-                        <a class="button" href="#">Открыть каталог</a>
-                        
-                    </li>  -->
+                        <a class="button slide-button" href="catallog.html">Открыть каталог</a>
+
+                    </li>
                 </ul>
+                <div class="slider-controls">
+                    <button type="button" aria-label="Первый слайд"></button>
+                    <button class="current" type="button" aria-label="Первый слайд"></button>
+                </div>
+                <div class="button-next"><img src="img/icon-left.svg" alt="Предыдущий слайд." width="21" height="40">
+                </div>
+                <div class="button-prev"><img src="img/icon-right.svg" alt="Следующий слайд." width="21" height="40">
+                </div>
             </div>
             <div class="discounts">
                 <h3 class="title">Скидки 50%</h3>
@@ -180,7 +188,7 @@
                     <button class="button" type="button">25500 Р.</button>
                 </div>
 
-                <div class="catalog-item">
+                <div class="catalog-item new">
                     <div class="visual"><img class="img-drill" src="img/object-2.jpg" height="112" width="127"
                             alt="Перфоратор BOSCH BFG 6000"></div>
                     <h3 class="title">Перфоратор BOSCH BFG 3000</h3>
@@ -194,7 +202,7 @@
                     <span class="old-price">30500 Р.</span>
                     <button class="button" type="button">25500 Р.</button>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item new">
                     <div class="visual"><img class="img-drill" src="img/object-2.jpg" height="112" width="127"
                             alt="Перфоратор BOSCH BFG 3000"></div>
                     <h3 class="title">Перфоратор BOSCH BFG 2000</h3>
