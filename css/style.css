@@ -10,6 +10,8 @@ padding: 0;
 clip: rect(0 0 0 0);
 overflow: hidden;
 }
+
+
 :root {
 --Basic-green: #63A63E; 
 --Basic-red: #EE3643;
