@@ -303,6 +303,24 @@ img {
     padding: 9px 15px 10px 15px;
 }
 
+.marker-catalog .link,
+.shopping-catalog .link {
+    padding: 10px 10px 10px 20px;
+}
+
+.marker-catalog .marker-text {
+    margin-left: 6px;
+    ;
+}
+
+.shopping-catalog .shopping-text {
+    margin-left: 4px;
+}
+
+.shopping-catalog {
+    margin-left: 23px;
+}
+
 .user-navigation .order {
     background-color: var(--Basic-green);
     text-align: center;
@@ -318,6 +336,11 @@ img {
 .marker .link:active,
 .shopping .link:active {
     opacity: 1;
+}
+
+.marker-catalog .link:visited,
+.shopping-catalog .link:visited {
+    background-color: var(--Basic-red);
 }
 
 .shopping .link:active .vision,
@@ -364,7 +387,6 @@ img {
     line-height: 23px;
     font-style: italic;
     text-align: left;
-    word-spacing: 2px;
 }
 
 .slogan .text {
@@ -1133,7 +1155,7 @@ img {
 .filters fieldset {
     padding: 0;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     border: none;
 }
 
@@ -1242,7 +1264,7 @@ img {
 }
 
 .firms .list {
-    margin-top: 22px;
+    margin-top: 18px;
 }
 
 .filter-input-checkbox:hover+.label {
@@ -1264,11 +1286,11 @@ img {
     border: 2px solid var(--Basic-greylight);
 }
 
-.filter-input-checkbox:checked+.label:hover:before {
+.filter-input-checkbox:checked+.label:hover::before {
     border: 2px solid var(--Very-lightgrey);
 }
 
-.filter-input-radio:checked+.label:hover:before {
+.filter-input-radio:checked+.label:hover::before {
     border: 2px solid var(--Very-lightgrey);
 }
 
@@ -1323,7 +1345,7 @@ img {
     position: relative;
     display: block;
     cursor: pointer;
-    user-select: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
@@ -1356,7 +1378,7 @@ img {
 .main-catalog-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 23px;
+    margin-bottom: 30px;
 }
 
 .main-catalog-list .catalog-item,
@@ -1408,7 +1430,7 @@ img {
     width: 218px;
     height: 161px;
     position: relative;
-    margin: 2px 0 15px 0;
+    margin-bottom: 14px;
 }
 
 .main-catalog-list .catalog-item .title,
@@ -1656,7 +1678,7 @@ img {
 
 .about-drells .text {
     margin: 0;
-    padding-top: 26px;
+    padding-top: 22px;
     color: var(--Black);
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
@@ -1677,7 +1699,7 @@ img {
 .wrapper-info-company .title {
     margin: 0;
     padding: 0;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     font-weight: 400;
     font-size: 30px;
     line-height: 30px;
@@ -1688,13 +1710,13 @@ img {
 }
 
 .list-services {
-    margin-bottom: 33px;
+    margin-bottom: 30px;
 }
 
 .list-services-item {
     position: relative;
     padding: 0;
-    margin: 11px 0 34px 36px;
+    margin: 10px 0 34px 36px;
     font-size: 18px;
     line-height: 14px;
     margin-bottom: 22px;
@@ -1704,7 +1726,7 @@ img {
     content: '';
     position: absolute;
     left: -36px;
-    top: 8px;
+    top: 5px;
     display: block;
     width: 25px;
     height: 2px;
@@ -1722,7 +1744,15 @@ img {
     padding: 0;
     font-size: 13px;
     line-height: 24px;
-    margin-bottom: 11px;
+    margin-bottom: 26px;
+}
+
+.services .text-addition {
+    font-family: "PT Sans", "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 24px;
 }
 
 .contacts .text {
@@ -1738,7 +1768,7 @@ img {
 }
 
 .services .button {
-    padding: 11px 41px 13px 40px;
+    padding: 10px 41px 13px 40px;
 }
 
 
@@ -1846,10 +1876,11 @@ img {
 .feedback .link:focus,
 .footer-copyright .link:focus {
     color: var(--Basic-red);
+    text-decoration: none;
 }
 
 .feedback .link:hover,
-.footer-copyright .link:focus {
+.footer-copyright .link:hover {
     text-decoration: underline;
 }
 
@@ -2013,8 +2044,12 @@ img {
     outline: 0;
 }
 
+.modal-content-close::after,
+.modal-content-close::before,
 .modal-content-close-lesson::before,
-.modal-content-close-lesson::after {
+.modal-content-close-lesson::after,
+.modal-content-close-modal-map::after,
+.modal-content-close-modal-map::before {
     content: '';
     position: absolute;
     top: 20px;
@@ -2028,12 +2063,16 @@ img {
     cursor: pointer;
 }
 
-.modal-content-close-lesson::after {
+.modal-content-close-lesson::after,
+.modal-content-close::after,
+.modal-content-close-modal-map::after {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
+.modal-content-close,
 .modal-content-close-lesson,
+.modal-content-close-modal-map,
 .modal-buying .button {
     padding: 0;
     border: 0;
@@ -2127,7 +2166,7 @@ img {
     flex-direction: column;
     font-size: 14px;
     line-height: 18px;
-    margin: 38px auto 55px;
+    margin: 38px auto 51px;
     width: 135px;
 }
 
