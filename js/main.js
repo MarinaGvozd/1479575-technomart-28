@@ -6,16 +6,32 @@ var link = document.querySelector(".write-link");
 var popup = document.querySelector(".write-us");
 var closeBtn = document.querySelector(".modal-content-close");
 
+var modalPopup = document.querySelector(".modal-popup");
+
 var mapLink = document.querySelector(".contacts-button-map");
 var mapPopup = document.querySelector(".modal-map");
 
 var closeModalMap = document.querySelector(".modal-content-close-modal-map");
 
+function addModalShowSelector(element) {
+    modalPopup.classList.add("show");
+    element.classList.add("modal-show");
+}
+
+function removeModalShowSelector() {
+    document.querySelectorAll(".modal-show").forEach((e) => {
+        e.classList.remove("modal-show");
+    })
+    modalPopup.classList.remove("show");
+
+}
+
 if (mapLinks) {
     mapLinks.forEach(element => {
         element.addEventListener("click", function(event) {
+            removeModalShowSelector();
             event.preventDefault();
-            mapBuyPopup.classList.add("modal-show");
+            addModalShowSelector(mapBuyPopup);
         })
     })
 }
@@ -23,7 +39,7 @@ if (mapLinks) {
 if (mapClose) {
     mapClose.addEventListener("click", function(evt) {
         evt.preventDefault();
-        mapBuyPopup.classList.remove("modal-show");
+        removeModalShowSelector();
     });
 }
 
@@ -31,39 +47,48 @@ window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
         if (mapPopup.classList.contains("modal-show")) {
             evt.preventDefault();
-            mapPopup.classList.remove("modal-show");
+            removeModalShowSelector();
         }
         if (mapBuyPopup.classList.contains("modal-show")) {
             evt.preventDefault();
-            mapBuyPopup.classList.remove("modal-show");
+            removeModalShowSelector();
         }
     }
 });
 
 if (link) {
     link.addEventListener("click", function(evt) {
+        removeModalShowSelector();
         evt.preventDefault();
-        popup.classList.add("modal-show");
+        addModalShowSelector(popup);
     });
 }
 
 if (closeBtn) {
     closeBtn.addEventListener("click", function(evt) {
         evt.preventDefault();
-        popup.classList.remove("modal-show");
+        removeModalShowSelector();
     });
 }
 
 if (closeModalMap) {
     closeModalMap.addEventListener("click", function(evt) {
         evt.preventDefault();
-        mapPopup.classList.remove("modal-show");
+        removeModalShowSelector();
     });
 }
 
 if (mapLink) {
     mapLink.addEventListener("click", function(evt) {
+        removeModalShowSelector();
         evt.preventDefault();
-        mapPopup.classList.add("modal-show");
+        addModalShowSelector(mapPopup);
+    });
+}
+if (modalPopup) {
+    modalPopup.addEventListener("click", function(evt) {
+        if (evt.target === modalPopup) {
+            removeModalShowSelector();
+        }
     });
 }
