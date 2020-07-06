@@ -345,9 +345,11 @@ img {
     opacity: .3;
 }
 
+.marker-catalog .link:hover,
+.shopping-catalog .link:hover,
 .marker .link:hover,
 .shopping .link:hover {
-    opacity: 1;
+    opacity: 0.3;
 }
 
 .order :hover {
@@ -366,7 +368,8 @@ img {
     text-align: center;
     margin-left: 24px;
 }
-
+.marker-catalog .vision,
+.shopping-catalog .vision,
 .shopping .vision,
 .marker .vision {
     opacity: 0.3;
@@ -376,6 +379,12 @@ img {
 .marker:hover .vision {
     opacity: 1;
 }
+
+.marker-catalog:hover .vision,
+.shopping-catalog:hover .vision {
+    opacity: 0.3;
+}
+
 
 .slogan {
     min-width: 281px;
@@ -969,7 +978,7 @@ img {
     padding: 0;
     list-style: none;
     grid-column: 1 / -1;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
