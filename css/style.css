@@ -293,17 +293,18 @@ img {
 .order .link {
     padding: 9px 18px 10px 18px;
 }
-
-.marker .link,
-.shopping .link {
-    padding: 9px 15px 10px 15px;
+.marker-catalog .link {
+    padding: 9px 39px 9px 36px;
 }
-
-.marker-catalog .link,
 .shopping-catalog .link {
-    padding: 9px 10px 9px 20px;
+    padding: 9px 22px 9px 15px;
 }
-
+.shopping .link {
+    padding: 10px 27px 9px 28px;
+}
+.marker .link {
+    padding: 8px 26px 8px 28px;
+}
 .marker-catalog .marker-text,
 .marker.marker-text {
     margin-left: 6px;
@@ -314,14 +315,15 @@ img {
     margin-left: 3px;
 }
 
-.shopping-catalog {
-    margin-left: 23px;
+.vision.img {
+    margin-right: 5px;
+
 }
 
 .user-navigation .order {
     background-color: var(--Basic-green);
     text-align: center;
-    margin-left: 12px;
+
 }
 
 .marker .link:focus,
@@ -333,6 +335,9 @@ img {
 .marker .link:active,
 .shopping .link:active {
     opacity: 1;
+}
+.shopping-catalog .link.full-basket {
+    background-color: var(--Basic-red);
 }
 
 .marker-catalog .link:visited,
@@ -366,7 +371,6 @@ img {
 
 .shopping {
     text-align: center;
-    margin-left: 24px;
 }
 .marker-catalog .vision,
 .shopping-catalog .vision,
@@ -1160,7 +1164,7 @@ img {
 .filters fieldset {
     padding: 0;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     border: none;
 }
 .filters .type {
