@@ -140,7 +140,7 @@ img {
     background-color: var(--Blue);
 }
 
-.main-navigation .item-list .link:focus {
+.main-navigation .link:focus {
     background-color: var(--Special-dark);
     opacity: 0.3;
 }
@@ -306,19 +306,15 @@ img {
     padding: 8px 26px 8px 28px;
 }
 .marker-catalog .marker-text,
-.marker.marker-text {
+.marker .marker-text {
     margin-left: 6px;
 }
 
 .shopping-catalog .shopping-text,
-.marker.marker-text {
+.shopping-catalog .shopping-text {
     margin-left: 3px;
 }
 
-.vision.img {
-    margin-right: 5px;
-
-}
 
 .user-navigation .order {
     background-color: var(--Basic-green);
@@ -336,7 +332,7 @@ img {
 .shopping .link:active {
     opacity: 1;
 }
-.shopping-catalog .link.full-basket {
+.shopping-catalog .full-basket {
     background-color: var(--Basic-red);
 }
 
@@ -846,11 +842,11 @@ img {
     box-shadow: 0 10px 25px rgba(41, 52, 73, .5);
 }
 
-.list-manufacturers .list-item .link:focus {
+.list-manufacturers .link:focus {
     opacity: 0.2;
 }
 
-.list-manufacturers .list-item .vision {
+.list-manufacturers .vision {
     display: block;
 }
 
@@ -1039,11 +1035,11 @@ img {
     margin-right: 9px;
 }
 
-.pagination-item.next-page .link {
+.next-page .link {
     padding: 10px 31px;
 }
 
-.pagination-item a:hover {
+.pagination-item .link:hover {
     border-color: var(--Basic-greylight);
 }
 
@@ -1613,7 +1609,7 @@ img {
     margin-bottom: 25px;
 }
 
-.section.content3 .button {
+.content3 .button {
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
@@ -1626,12 +1622,11 @@ img {
     cursor: pointer;
     font-family: "Cuprum", "Arial", sans-serif;
 }
-
-.section.content3 .button:hover {
+.content3 .button:hover {
     background-color: var(--Bg-dark-red);
 }
 
-.section.content3 .button:hover {
+.content3 .button:hover {
     background-color: var(--Error);
 }
 
