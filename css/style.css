@@ -994,7 +994,7 @@ img {
 }
 
 .breadcrumbs .link-home {
-    padding-right: 15px;
+    padding-right: 18px;
 }
 
 .breadcrumbs .item-list::before {
@@ -1002,6 +1002,7 @@ img {
     width: 7px;
     height: 10px;
 }
+
 /* Pagination */
 
 .pagination-list {
@@ -1045,14 +1046,14 @@ img {
 .sort .title-sort {
     letter-spacing: -1.5px;
     padding: 0;
-    margin: 0 0 0 20px;
+    margin: 1px 0 0 20px;
     font-weight: 400;
 }
 
 .page-catalog .sort {
-    padding: 8px 0;
+    padding: 6px 0;
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -1081,15 +1082,21 @@ img {
 }
 
 .list-sort .list-item {
-    margin: 0 34px;
+
     opacity: 0.3;
     border-bottom: 1px dotted var(--Basic-red);
     cursor: pointer;
 }
-
+.functional,
+.typing {
+    margin: 0 32px;
+}
+.price {
+    margin: 0 40px;
+}
 .list-sort .list-item-img {
     cursor: pointer;
-    margin: 0 12px 0;
+    margin: 0 15px 0;
 }
 
 .list-sort .list-item:hover {
@@ -1100,7 +1107,9 @@ img {
     color: var(--Basic-red);
     border-bottom: none;
 }
-
+.list-item-img.up {
+    margin-left: 7px;
+}
 .list-item-img.down:hover path,
 .list-item-img.up:hover path {
     fill: var(--Black);
@@ -1219,7 +1228,9 @@ img {
     display: flex;
     justify-content: space-between;
 }
-
+.input.min {
+    padding-left: 14px;
+}
 .label.max-price {
     margin-left: 9px;
 }
