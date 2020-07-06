@@ -174,7 +174,7 @@ img {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: min-content 1fr 1fr;
-    padding: 42px 0 40px 30px;
+    padding: 42px 0 42px 30px;
     align-items: start;
 }
 
@@ -301,7 +301,7 @@ img {
 
 .marker-catalog .link,
 .shopping-catalog .link {
-    padding: 10px 10px 10px 20px;
+    padding: 9px 10px 9px 20px;
 }
 
 .marker-catalog .marker-text,
@@ -1023,7 +1023,7 @@ img {
 }
 
 .pagination-item {
-    margin-right: 10px;
+    margin-right: 9px;
 }
 
 .pagination-item.next-page .link {
@@ -1051,9 +1051,9 @@ img {
 }
 
 .page-catalog .sort {
-    padding: 6px 0;
+    padding: 8px 0;
     margin: 0;
-    margin-bottom: 36px;
+    margin-bottom: 31px;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -1443,7 +1443,7 @@ img {
     width: 218px;
     height: 161px;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 .main-catalog-list .title-drill,
@@ -1708,7 +1708,7 @@ img {
 .wrapper-info-company .container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 77px;
+    margin-bottom: 76px;
     margin-top: 70px;
 }
 
@@ -1781,11 +1781,11 @@ img {
 }
 
 .contacts .button {
-    padding: 11px 65px 12px 59px;
+    padding: 11px 61px;
 }
 
 .services .button {
-    padding: 10px 41px 13px 40px;
+    padding: 10px 41px;
 }
 /* Футер */
 
@@ -2118,7 +2118,6 @@ img {
     left: 0;
     background-color: black;
     opacity: .7;
-    animation: bounce 1s;
 }
 
 .show {
@@ -2198,7 +2197,7 @@ img {
     flex-direction: column;
     font-size: 14px;
     line-height: 18px;
-    margin: 38px auto 49px;
+    margin: 38px auto 47px;
     width: 135px;
 }
 
